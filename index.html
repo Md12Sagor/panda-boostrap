@@ -12,7 +12,7 @@
 <body>
 
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar  fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="Bootstrap">
@@ -28,13 +28,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
 
@@ -44,7 +44,7 @@
             </div>
         </nav>
 
-        <!-- slider start -->
+        <!-- carousel start -->
         <section class="mt-5">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
@@ -141,13 +141,13 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="p-3 border rounded-3 bg-warning d-flex align-items-center justfy-content-center">
                             <h1 class="text-success">Bag</h1>
-                            <img src="images/categories/watch.png" alt="">
+                            <img src="images/categories/bag.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="p-3 border rounded-3 bg-warning d-flex align-items-center justfy-content-center">
                             <h1 class="text-primary">Shoes</h1>
-                            <img src="images/categories/watch.png" alt="">
+                            <img src="images/categories/shoes.png" alt="">
                         </div>
                     </div>
 
@@ -158,7 +158,7 @@
         <!-- catagories end -->
 
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -211,7 +211,7 @@
         <!-- shoes section end -->
         <!-- Backpack section start -->
 
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -261,7 +261,35 @@
         </section>
 
         <!-- Backpack section end -->
+
+        <!-- Subscribe Start -->
+
+        <section style="height: 300px;"
+            class="container rounded-3 d-flex justfy-content-center align-items-center bg-info" id="subscribe">
+
+            <div style="height: 300px"
+                class="container rounded-3 d-flex justify-content-center align-items-center bg-info">
+                <div>
+                    <h2>Let's Stay Touch</h2>
+                    <p>Get update on salse, specials an more</p>
+                    <form>
+                        <div class="mb-1">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Subscribe End -->
     </main>
+
+    <footer class="mt-5 text-center">
+        <small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
